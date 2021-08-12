@@ -166,7 +166,7 @@ macro(find_cplex_library var name paths)
   endif ()
 endmacro()
 
-set(CPLEX_CONCERT_DIR ${CPLEX_STUDIO_DIR}/concert)
+set(CPLEX_CONCERT_DIR ${CPLEX_STUDIO_DIR_}/concert)
 
 # Find the Concert include directory.
 find_path(CPLEX_CONCERT_INCLUDE_DIR ilconcert/ilosys.h
@@ -234,7 +234,7 @@ endif ()
 # ----------------------------------------------------------------------------
 # CP Optimizer - depends on Concert
 
-set(CPLEX_CP_DIR ${CPLEX_STUDIO_DIR}/cpoptimizer)
+set(CPLEX_CP_DIR ${CPLEX_STUDIO_DIR_}/cpoptimizer)
 
 # Find the CP Optimizer include directory.
 find_path(CPLEX_CP_INCLUDE_DIR ilcp/cp.h PATHS ${CPLEX_CP_DIR}/include)

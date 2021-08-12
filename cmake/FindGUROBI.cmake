@@ -4,9 +4,9 @@ find_path(GUROBI_INCLUDE_DIRS
         PATH_SUFFIXES ../include)
 
 find_library(GUROBI_LIBRARY
-        NAMES gurobi gurobi81 gurobi90
+        NAMES gurobi gurobi81 gurobi90 gurobi91
         HINTS ${GUROBI_DIR} $ENV{GUROBI_HOME}
-        PATH_SUFFIXES lib)
+        PATH_SUFFIXES lib .so .a)
 
 find_library(GUROBI_CXX_LIBRARY
         NAMES gurobi_c++
